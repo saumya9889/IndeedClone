@@ -1,0 +1,72 @@
+.company-review-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap  ;
+    gap: 1rem;
+    width: 100%; 
+    padding: 1.5rem 0 .5rem;
+    border-radius: 10px; 
+
+    .comment {
+        background-color: #1f1e2ddc;
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+            &-pic {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                background-color: #d56a6a;
+                border-radius: 50%;
+            }
+
+            h2 {
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 0px;
+                margin-left: 10px;
+            }
+        }
+
+        &_content {
+            font-size: 16px;
+            color: white;
+        }
+
+        &_footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                color: #8c8aa7;
+            }
+
+            button {
+                background-color: transparent;
+                padding: 8px 10px;
+                border: 1px solid #1f1e2d;
+                display: flex;
+                align-items: center;
+                color: #8c8aa7;
+                border-radius: 3px;
+
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

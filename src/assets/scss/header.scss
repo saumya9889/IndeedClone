@@ -1,0 +1,85 @@
+.header-wrap {
+    width: 100%;
+    padding: .3rem 0;
+    border-bottom: 1.5px solid #e4e2e0;
+    position: sticky;
+    nav {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .left-content {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            img {
+                max-width: 80%;
+                object-fit: cover;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+            li{
+                list-style-type: none;
+                font-size: 1em;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                color: #000;
+                padding-bottom: .5rem;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+                &:hover{
+                    opacity: .70;
+                    transition: all .3s ease-in-out;
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+    }
+
+    .right-content {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        button{
+            font-size: 1.1em;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            color: #000; 
+            font-weight: normal;
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            background: #2557a7;
+            padding: .5rem;
+            border: none;
+            outline:none;
+            border-radius: .5rem;
+          &:hover{
+            opacity: .77;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+          }
+            span{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
